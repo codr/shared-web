@@ -22,8 +22,8 @@ module.exports = function (grunt) {
 				src: [ '_js/lib/can.custom.js', '_js/lib/can.object.js', '_js/lib/can.fixture.js',
 					   '_js/lib/grayscale.js', '_js/lib/moment.js', '_js/lib/prettify.js',
 					   '_js/models/*.js', '_js/controls/*.js',
-					   '_js/views.production.js', '_js/app.js' ],
-				dest: 'resources/production.js'
+					   '_js/views.production.js', '_js/utils.js' ],
+				dest: 'resources/shared.js'
 			}
 		},
 		uglify: {
@@ -32,7 +32,7 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				src: '<%= concat.dist.dest %>',
-				dest: 'resources/production.min.js'
+				dest: 'resources/shared.min.js'
 			}
 		},
 		cancompile: {

@@ -8218,7 +8218,7 @@ can.view.preload('templates_socialStats_mustache',can.Mustache(function(_CONTEXT
 can.view.preload('templates_tweet_mustache',can.Mustache(function(_CONTEXT,_VIEW) { with(_VIEW) { with (_CONTEXT) {var ___v1ew = [];var ___c0nt3xt = this && this.___st4ck3d ? this : [];___c0nt3xt.___st4ck3d = true;var ___st4ck = function(context, self) {var s;if (arguments.length == 1 && context) {s = !context.___st4ck3d ? [context] : context;} else if (!context.___st4ck3d) {s = [self, context];} else if (context && context === self && context.___st4ck3d) {s = context.slice(0);} else {s = context && context.___st4ck3d ? context.concat([self]) : ___st4ck(context).concat([self]);}return (s.___st4ck3d = true) && s;};___v1ew.push("<div class=\"bithub-post tweet\">\n\t<!-- Commented out b/c it doesn't make sense without the ability to vote up, which we can't do yet. //TG -->\n\t<!-- <div class=\"pull-left score\">");___v1ew.push(can.view.txt(1,'div',0,this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("points",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("</div> --> \n\t\n\t<div class=\"twitter-profile-pic pull-left\">\n\t\t<a href=\"http://twitter.com/");___v1ew.push(can.view.txt(1,'a','href',this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("handle",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("\"",can.view.pending(),">");___v1ew.push("<img src=\"");___v1ew.push(can.view.txt(1,'img','src',this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("picture",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("\" alt=\"\"",can.view.pending(),"/>");___v1ew.push("</a>\n\t</div>\n\t<h5><a class=\"name\" href=\"http://twitter.com/");___v1ew.push(can.view.txt(1,'a','href',this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("handle",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("\"",can.view.pending(),">");___v1ew.push(can.view.txt(1,'a',0,this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("realName",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("</a><a class=\"handle\" href=\"http://twitter.com/");___v1ew.push(can.view.txt(1,'a','href',this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("handle",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("\"",can.view.pending(),">");___v1ew.push(" @");___v1ew.push(can.view.txt(1,'a',0,this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("handle",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("</a></h5>\n\t<p>");___v1ew.push(can.view.txt(1,'p',0,this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("body",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("</p>\n\t<div class=\"bithub-footer\">");___v1ew.push(can.view.txt(1,'div',0,this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("formatDate",{context:___st4ck(___c0nt3xt,this),options:options},true,false),can.Mustache.get("date",{context:___st4ck(___c0nt3xt,this),options:options},false,true));}));___v1ew.push(" via <a href=\"");___v1ew.push(can.view.txt(1,'a','href',this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("link",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("\"",can.view.pending(),">");___v1ew.push(can.view.txt(1,'a',0,this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},null,can.Mustache.get("feed",{context:___st4ck(___c0nt3xt,this),options:options},false,false));}));___v1ew.push("</a></div>\n</div>");; return ___v1ew.join('')}} }));
 can.view.preload('templates_twitterTab_mustache',can.Mustache(function(_CONTEXT,_VIEW) { with(_VIEW) { with (_CONTEXT) {var ___v1ew = [];var ___c0nt3xt = this && this.___st4ck3d ? this : [];___c0nt3xt.___st4ck3d = true;var ___st4ck = function(context, self) {var s;if (arguments.length == 1 && context) {s = !context.___st4ck3d ? [context] : context;} else if (!context.___st4ck3d) {s = [self, context];} else if (context && context === self && context.___st4ck3d) {s = context.slice(0);} else {s = context && context.___st4ck3d ? context.concat([self]) : ___st4ck(context).concat([self]);}return (s.___st4ck3d = true) && s;};___v1ew.push("<div class=\"tab-description twitter\">\n\t<div class=\"pull-right categories\">\n\t\t<a href=\"http://twitter.com/canjs\" class=\"button\"><span class=\"icon-twitter\"></span> Follow on Twitter</a>\n\t</div><!-- categories -->\n\t<div class=\"posts\">\n\t\t<h1>Recent CanJS Tweets</h1>\n\t\t<div class=\"bithub-content\">");___v1ew.push("\n");___v1ew.push(can.view.txt(0,'div',0,this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},"#",can.Mustache.get("tweets",{context:___st4ck(___c0nt3xt,this),options:options},false,false),[{_:function(){return ___v1ew.join("");}},{fn:function(___c0nt3xt){var ___v1ew = [];___v1ew.push("\t\t\t");___v1ew.push(can.view.txt(0,'div',0,this,function(){ return options.partials && options.partials['templates/tweet.mustache'] ? can.Mustache.renderPartial(options.partials['templates/tweet.mustache'],___st4ck(___c0nt3xt,this).pop(),options) : can.Mustache.render('templates/tweet.mustache', ___st4ck(___c0nt3xt,this))}));___v1ew.push("\n");return ___v1ew.join("");}}])}));___v1ew.push("\t\t\t");___v1ew.push(can.view.txt(0,'div',0,this,function(){ return can.Mustache.txt({context:___st4ck(___c0nt3xt,this),options:options},"^",can.Mustache.get("tweets",{context:___st4ck(___c0nt3xt,this),options:options},false,false),[{_:function(){return ___v1ew.join("");}},{inverse:function(___c0nt3xt){var ___v1ew = [];___v1ew.push("\n\t\t\t<div class=\"loading\"/>");___v1ew.push("\n");return ___v1ew.join("");}}])}));___v1ew.push("\t\t</div>\n\t</div>\n</div>");; return ___v1ew.join('')}} }));
 })(this);
-(function($) {
+(function() {
 	Bitovi.OSS.initTwitterWidgets = function() {
 		if($('.twitter-follow-button').length) {
 			// replace the "Follow @canjs!" link with a little wiget with follower count.
@@ -8243,51 +8243,4 @@ can.view.preload('templates_twitterTab_mustache',can.Mustache(function(_CONTEXT,
 			style.remove();
 		}, 0);
 	};
-
-	var initControls = function(mappings) {
-		can.each(mappings, function(name, selector) {
-			$(selector).each(function() {
-				new Bitovi.OSS[name]($(this));
-			});
-		});
-	}
-
-	$(function() {
-		Bitovi.OSS.initTwitterWidgets();
-		initControls({
-			'.index #hero-download': 'HeroDownloadCustomizer',
-			'.index .benefits': 'Benefits',
-			'.index .social': 'SocialStats',
-			'.index .example': 'LiveExample',
-			'.download .cdn': 'CDNChooser',
-			'.download .customize': 'DownloadCustomizer',
-			'.community .hero': 'CommunityTabs',
-			'.docs .sidebar': 'Menu',
-			'.docs .signature': 'ApiSignature',
-			'body.docs .contents': 'ContentsList'
-		});
-
-		// Syntax highlighting
-		$('pre code').each(function() {
-			var el = $(this).parent();
-			el.addClass('prettyprint');
-			if(!el.hasClass('nolinenums')) {
-				el.addClass('linenums');
-			}
-		});
-
-		prettyPrint();
-	});
-
-	// feature-test for canvas
-	var canvas = !!((document.createElement('canvas')).getContext);
-
-	if(canvas) {
-		// this needs to wait until everything is loaded.
-		$(window).load(function() {
-
-			// Grayscaling for our featured apps.
-			Grayscale($('.carousel img'), 300);
-		});
-	}
-})(jQuery);
+})();
