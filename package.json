@@ -1,6 +1,6 @@
 {
   "name": "web-shared",
-  "description": "Bitovi open source project shared files.",
+  "description": "Bitovi open source project web page shared files.",
   "version": "0.1.0",
   "homepage": "https://github.com/bitovi/web-shared",
   "author": {
@@ -25,12 +25,8 @@
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.3.1",
     "grunt-contrib-concat": "~0.2.0",
     "grunt-contrib-jshint": "~0.4.3",
-    "grunt-contrib-less": "~0.5.0",
-    "documentjs": "https://github.com/bitovi/documentjs/tarball/node-generator",
-    "can-compile": "~0.2.1",
-    "grunt-contrib-clean": "~0.4.1"
+    "can-compile": "~0.2.1"
   }
 }

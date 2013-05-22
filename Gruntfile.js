@@ -7,10 +7,6 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		// Metadata.
 		pkg: grunt.file.readJSON('package.json'),
-		can: {
-			pkg: grunt.file.readJSON('can/package.json'),
-			path: 'can/'
-		},
 		banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
 			'<%= grunt.template.today("yyyy-mm-dd") %>\n' +
 			'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
@@ -39,48 +35,10 @@ module.exports = function (grunt) {
 				dest: 'resources/production.min.js'
 			}
 		},
-		less: {
-			development: {
-				options: {
-					compress: true
-				},
-				files: {
-					"resources/styles.css": "_styles/styles.less"
-				}
-			}
-		},
 		cancompile: {
 			dist: {
 				src: ['_js/templates/*.mustache'],
 				out: '_js/views.production.js'
-			}
-		},
-		watch: {
-			less: {
-				files: ['_styles/*.less'],
-				tasks: ['less']
-			},
-			docs: {
-				files: '<%= generate.docs.src %>',
-				tasks: ['docs']
-			},
-			js: {
-				files: ['_js/**/*.js', '_js/**/*.mustache'],
-				tasks: ['js']
-			},
-			pages: {
-				files: ['<%= generate.docs.src %>', '_pages/*.mustache', '_layouts/*.mustache', '_docs/*.mustache'],
-				tasks: ['docs']
-			},
-			guides: {
-				files: ['_guides/*.md'],
-				tasks: ['docs']
-			},
-			all: {
-				files: ['_pages/*.mustache', '_layouts/*.mustache',
-					'_docs/*.mustache', '_js/**/*.js', '_js/**/*.mustache',
-					'<%= generate.docs.src %>', '_styles/*.less'],
-				tasks: ['default']
 			}
 		}
 	});
@@ -89,17 +47,9 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('can-compile');
-	grunt.loadNpmTasks('documentjs');
-
-	grunt.registerTask('js', [ 'cancompile', 'concat', 'uglify' ]);
-	grunt.registerTask('development', ['watch:all']);
-	grunt.registerTask('docs', ['clean', 'generate']);
 
 	// Default task.
-	grunt.registerTask('default', [ 'cancompile', 'concat', 'uglify', 'less', 'clean', 'generate' ]);
+	grunt.registerTask('default', [ 'cancompile', 'concat', 'uglify' ]);
 
 };
