@@ -1,9 +1,9 @@
 <div class="container">
-  <!--<ul class="social-stats">
-    <li class="apps"><a href="#community/plugins">{{appsSubmitted}} apps submitted</a></li>
-    <li class="commits"><a href="#community%2Fgithub">{{recentCommits}} recent commits</a></li>
-    <li class="forums"><a href="#community%2Fforums">{{forumPosts}} new forum posts</a></li>
-    <li class="irc"><a href="#community%2Firc">{{ircPeople}} people on IRC</a></li>
-    <li class="plugins"><a href="#community%2Fplugin">{{pluginsSubmitted}} plugins submitted</a></li>
-  </ul>-->
+  <ul class="social-stats">
+  	{{#if commits}}<li class="commits"><a href="community.html#!github">{{commits}} recent {{plural 'commit' commits}}</a></li>{{/if}}
+  	{{#if plugins}}<li class="plugins"><a href="community.html#!plugins">{{plugins}} {{plural 'plugin' plugins}} submitted</a></li>{{/if}}
+    {{#if apps}}<li class="apps"><a href="community.html#!plugins">{{apps}} {{plural 'app' apps}} submitted</a></li>{{/if}}
+    {{#if posts}}<li class="forums"><a href="community.html#!forums">{{posts}} new forum {{plural 'post' posts}}</a></li>{{/if}}
+    {{#if articles}}<li class="irc"><a href="community.html#!plugins">{{articles}} recent {{plural 'article' articles}}</a></li>{{/if}}
+  </ul>
 </div><!-- .container -->
