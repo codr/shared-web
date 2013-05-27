@@ -6,7 +6,10 @@ can.Model('Bitovi.OSS.ActivitySummary', {
 		if(Bitovi.OSS.ActivitySummary.summary === null) {
 			Bitovi.OSS.ActivitySummary.summary = $.ajax({
 				url: Bitovi.URL.BITHUB + 'summary',
-				dataType: 'json'
+				dataType: 'json',
+				data: {
+					origin_date: moment().subtract('months', 1).format('YYYY-MM-DD:')
+				}
 			});
 		}
 
@@ -16,11 +19,11 @@ can.Model('Bitovi.OSS.ActivitySummary', {
 		//{"data":{"app":23,"article":30,"plugin":7,"code":1041,"chat":5578,"twitter":1510,"issues_event":247,"github":2547}}
 		data = data.data;
 		return {
-			appsSubmitted: data.app,
-			recentCommits: data.code,
-			//forumPosts: data.,
-			//ircPeople: '',
-			pluginsSubmitted: data.plugin
+			apps: data.app,
+			commits: data.code,
+			posts: data.posts,
+			articles: data.article,
+			plugins: data.plugin
 		};
 	}
 }, { });
