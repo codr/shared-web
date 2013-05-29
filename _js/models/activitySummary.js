@@ -8,7 +8,7 @@ can.Model('Bitovi.OSS.ActivitySummary', {
 				url: Bitovi.URL.BITHUB + 'summary',
 				dataType: 'json',
 				data: {
-					origin_date: moment().subtract('months', 1).format('YYYY-MM-DD:')
+					origin_date: moment().subtract('years', 3).format('YYYY-MM-DD:')
 				}
 			});
 		}
