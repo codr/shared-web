@@ -16,7 +16,7 @@ can.Control('Bitovi.OSS.Benefits', {
 			fast: {
 				className: 'fast',
 				title: 'Fast',
-				tagline: 'Sleek, responsive, and only 36K: exactly what it says on the can.',
+				tagline: 'Sleek and responsive: exactly what it says on the can.',
 				link: 'guides/Why.html#Fast'
 			}
 		}
