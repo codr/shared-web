@@ -1,17 +1,15 @@
-can.Control('Bitovi.OSS.SocialStats', {
-	defaults: {	}
-}, {
+can.Control('Bitovi.OSS.SocialStats', {}, {
 	init: function() {
-		this.state = new can.Observe({
-			appsSubmitted: 0,
-			recentCommits: 0,
-			forumPosts: 0,
-			ircPeople: 0,
-			pluginsSubmitted: 0
-		});
-		this.element.html(can.view('templates/socialStats.mustache', this.state));
+		this.state = new can.Observe({});
+		this.element.html(can.view('templates/socialStats.mustache', this.state, {
+			plural: function(word, count) {
+				// if we ever get an irregular plural (like 'people') we'll have to special-case.
+				return count === 1 ? word : word + 's';
+			}
+		}));
 
-		// TODO: bithub API call here.
-		// TODO: create helper so that plurals are correct.
+		Bitovi.OSS.ActivitySummary.findOne().done(can.proxy(function(summary) {
+			this.state.attr(summary);
+		}, this));
 	}
 });

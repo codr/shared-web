@@ -78,8 +78,8 @@
 		display: none;
 		position: absolute;
 		top: 60px;
-		left: 5px;
-		width: 307px;
+		right: 0px;
+		width: 342px;
 		font-size: 12px;
 		padding: 11px;
 		z-index: 3;
@@ -248,7 +248,7 @@
 	li a:hover:before, li.active a:before {
 		color: @light;
 		background-color: @color;
-		border-color: @light;
+		border-color: darken(@color, 10%);
 		text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
 	}
 	
@@ -316,6 +316,14 @@
 		left: 125px;
 		border-left-style: none;
 		border-bottom-style: none;
+	}
+	.readmore {
+		font-family: 'LatoLight', sans-serif;
+		font-size: 12px;
+		margin-left: 3px;
+		position: relative;
+		top: -2px;
+		text-transform: uppercase;
 	}
 }
 .index {

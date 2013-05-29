@@ -35,6 +35,16 @@ module.exports = function (grunt) {
 				dest: 'resources/shared.min.js'
 			}
 		},
+		less: {
+			default: {
+				options: {
+					compress: true
+				},
+				files: {
+					"resources/default.css": "_styles/default.less"
+				}
+			}
+		},
 		cancompile: {
 			dist: {
 				src: ['_js/templates/*.mustache'],
@@ -45,6 +55,7 @@ module.exports = function (grunt) {
 
 	// These plugins provide necessary tasks.
 	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('can-compile');
