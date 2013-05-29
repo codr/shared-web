@@ -1,4 +1,4 @@
-/*! web-shared - v0.1.0 - 2013-05-27
+/*! web-shared - v0.1.0 - 2013-05-29
 * https://github.com/bitovi/web-shared
 * Copyright (c) 2013 Bitovi; Licensed MIT */
 /*!
@@ -7658,7 +7658,7 @@ can.Control('Bitovi.OSS.Benefits', {
 			fast: {
 				className: 'fast',
 				title: 'Fast',
-				tagline: 'Sleek, responsive, and only 36K: exactly what it says on the can.',
+				tagline: 'Sleek and responsive: exactly what it says on the can.',
 				link: 'guides/Why.html#Fast'
 			}
 		}
