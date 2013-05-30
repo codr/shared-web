@@ -10,13 +10,13 @@ can.Control('Bitovi.OSS.Benefits', {
 			powerful: {
 				className: 'powerful',
 				title: 'Powerful',
-				tagline: 'Packs in everything you need to build your app. And you can learn it in a day.',
+				tagline: 'Live binding, restful models, observables, declarative events, and memory safe.',
 				link: 'guides/Why.html#Powerful'
 			},
 			fast: {
 				className: 'fast',
 				title: 'Fast',
-				tagline: 'Sleek and responsive: exactly what it says on the can.',
+				tagline: 'Fast templates, responsive widgets, and you can learn it in a day.',
 				link: 'guides/Why.html#Fast'
 			}
 		}
