@@ -1,4 +1,4 @@
-/*! web-shared - v0.1.0 - 2013-05-29
+/*! web-shared - v0.1.0 - 2013-05-31
 * https://github.com/bitovi/web-shared
 * Copyright (c) 2013 Bitovi; Licensed MIT */
 /*!
@@ -7556,13 +7556,12 @@ can.Model("Bitovi.OSS.GithubEvent", {
 			actorID: data._author,
 			picture: data.source_data.org.avatar_url,
 			title: data.title,
-			commits: data.source_data.payload.commits.map(function(el) {
+			commits: data.source_data.payload.commits ? data.source_data.payload.commits.map(function(el) {
 				return {
 					hash: el.sha,
 					message: el.message
 				}
-			}),
-
+			}) : [],
 			feed: data.feed,
 			category: data.category,
 			link: data.url,
@@ -7620,8 +7619,8 @@ can.Model("Bitovi.OSS.Tweet", {
 	model: function(data) {
 		return {
 			handle: data.actor,
-			realName: data.source_data.user.name,
-			picture: data.source_data.user.profile_image_url,
+			realName: data.source_data[data.source_data.event === 'follow' ? 'source' : 'user'].name,
+			picture: data.source_data[data.source_data.event === 'follow' ? 'source' : 'user'].profile_image_url,
 			body: data.title,
 
 			feed: data.feed,

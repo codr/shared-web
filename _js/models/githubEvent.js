@@ -5,13 +5,12 @@ can.Model("Bitovi.OSS.GithubEvent", {
 			actorID: data._author,
 			picture: data.source_data.org.avatar_url,
 			title: data.title,
-			commits: data.source_data.payload.commits.map(function(el) {
+			commits: data.source_data.payload.commits ? data.source_data.payload.commits.map(function(el) {
 				return {
 					hash: el.sha,
 					message: el.message
 				}
-			}),
-
+			}) : [],
 			feed: data.feed,
 			category: data.category,
 			link: data.url,
