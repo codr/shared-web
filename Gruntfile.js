@@ -36,12 +36,17 @@ module.exports = function (grunt) {
 			}
 		},
 		less: {
+			options: {
+				compress: true
+			},
 			default: {
-				options: {
-					compress: true
-				},
 				files: {
 					"resources/default.css": "_styles/default.less"
+				}
+			},
+			canjs: {
+				files: {
+					"resources/canjs.css": "_styles/canjs.less"
 				}
 			}
 		},
