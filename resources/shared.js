@@ -1,4 +1,4 @@
-/*! web-shared - v0.1.0 - 2013-05-31
+/*! web-shared - v0.1.0 - 2013-07-12
 * https://github.com/bitovi/web-shared
 * Copyright (c) 2013 Bitovi; Licensed MIT */
 /*!
@@ -7651,7 +7651,7 @@ can.Control('Bitovi.OSS.Benefits', {
 			powerful: {
 				className: 'powerful',
 				title: 'Powerful',
-				tagline: 'Live binding, restful models, observables, declarative events, and memory safe.',
+				tagline: 'Live binding, restful models, observables, declarative events, and memory safety.',
 				link: 'guides/Why.html#Powerful'
 			},
 			fast: {
